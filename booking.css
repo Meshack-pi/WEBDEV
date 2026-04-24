@@ -1,0 +1,19 @@
+.bookingForm{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    row-gap: 10px;
+    background-color: whitesmoke;
+}
+
+#bookingbtn{
+    height: 30px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: rgb(14, 171, 14);
+    color: white;
+}
