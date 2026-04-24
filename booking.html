@@ -7,17 +7,27 @@
     <title>Booking Page</title>
 </head>
 <body>
+
+<div>
     <h1>Booking Page</h1>
-    <h2>Eldoret Edition!</h2>
-    <div class="bookingForm">
-        <h2 id="book-heading">Reserver Your seat!</h2>
-        <label for="firstname">Full Names</label>
-        <input type="text"/>
-        <label for="phonenumber">Phone Number</label>
-        <input type="number" />
+    <h2>Eldoret Edition</h2>
+
+    <form class="bookingForm" id="bookingForm">
+        <h3>Reserve Your Seat</h3>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required pattern="[0-9]{10}">
+
         <label for="email">Email Address</label>
-        <input type="email"/>
-        <button id="bookingbtn">Book</button>
-    </div>
+        <input type="email" id="email" required>
+
+        <button type="submit">Book Now</button>
+
+        <p class="success" id="message"></p>
+    </form>
+</div>
 </body>
 </html>
