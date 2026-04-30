@@ -1,3 +1,6 @@
+/* Import a clean Google Font for paragraphs */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 /* Reset default spacing */
 body {
     margin: 0;
@@ -14,6 +17,7 @@ body {
     width: 200px;
     background-color: #f4f4f4;
     padding: 15px;
+    border-right: 1px solid #ddd;
 }
 
 /* Navigation list */
@@ -26,15 +30,32 @@ body {
     margin: 10px 0;
 }
 
+/* Navigation links */
 .sidebar a {
     text-decoration: none;
     color: #333;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 /* Main content */
 .content {
     padding: 20px;
     flex: 1;
+}
+
+/* Paragraph font change */
+.content p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
 /* Image styling */
