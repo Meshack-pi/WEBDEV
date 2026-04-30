@@ -1,40 +1,45 @@
-.heading {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: center;
+/* Reset default spacing */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-.footer{
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-#clickbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
-  justify-content: center;
-  align-items: center;
-}
-.buttonclk{
+
+/* Layout container */
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#clickbtn:hover {
-  background-color: #45a049;
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
 }
 
-.navigation{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  row-gap: 20px;
+/* Navigation list */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main content */
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Image styling */
+.content img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
 }
